@@ -1,0 +1,76 @@
+\documentclass[12pkt,a4paper]{article}
+\usepackage{graphicx}
+\graphicspath{pictures/}
+
+
+\title{\textbf{Chapter 1}}
+\author{\textit{Ola Ignacyk}}
+\date{\underline{November 2022}}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Jest to rozdział stworzony przeze mnie b zrozumieć podstawy LaTeX.
+\end{abstract}
+
+
+\section{ Wyrażenie matematyczne:}
+Wzór Pitagorasa ma postać:
+ \[a^2+b^2=c^2\]
+
+ \section{Zdjęcie:}
+
+\begin{center}
+   \includegraphics[scale 2]{barbie.jpg} 
+    \label{fig:zdjecie}
+\end{center}
+
+
+\section{Tabela:}
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ 1 & 2 & 3 & 4 \\ [0.5ex] 
+ \hline\hline
+ - & - & - & - \\ 
+ - & - & - & - \\
+ - & - & - & - \\
+ - & - & - & - \\
+ - & - & - & - \\ [1ex] 
+ \hline
+\end{tabular}
+\label{table:tabela}
+\end{table}
+
+\section{Lista numerowana:}
+\begin{enumerate}
+    \item Po pierwsze...
+    \item Po drugie...
+\end{enumerate}
+
+
+\section{Lista nienumerowana:}
+\begin{itemize}
+    \item Pierwsze:
+    \item Drugie:
+\end{itemize}
+
+\section{Krótki tekst:}
+- \emph{Jutro przyniosę film} - ogłosił. - \emph{I macie mi na nim nie zasnąć, bo inaczej będziecie musieli odegrać go sami.}
+
+Kilka osób zaśmiało się, słysząc tę \textbf{groźbę}, ale większość już się oddaliła, \underline{jeśli nie ciałem, to przynajmniej duchem.}
+
+Tak to się zaczęło. Kiedy jest się Światłem, dzień i noc mają mniejsze znaczenie. Noc nie jest potrzebna do odpoczynku - to tylko kilka irytujących godzin ciemności.\\ Ten łańcuch dni i nocy pomaga jednak Żywym odmierzać swoją podróż. To historia mojej podróży z powrotem do świata Żywych. W ciągu niespełna tygodnia miałam znów zamieszkać w ludzkim ciele.
+
+Który akapit to tabela:
+\ref{table:tabela}
+
+Który akapit to zdjęcie:
+\ref{fig:zdjecie}
+
+
+\end{document}
+
